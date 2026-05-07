@@ -1,0 +1,9 @@
+chain:
+  as: etcd-encryption-vault
+  steps:
+  - ref: etcd-encryption-vault-install
+  - ref: etcd-encryption-vault-configure
+  documentation: |-
+    Installs and configures HashiCorp Vault Enterprise for Kubernetes KMS encryption.
+    This chain runs vault-install followed by vault-configure to set up a fully
+    operational Vault instance with transit engine and AppRole authentication.
